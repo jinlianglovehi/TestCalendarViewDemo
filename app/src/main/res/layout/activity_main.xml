@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_calendar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible" >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@color/calendar_top_bg" >
+
+        <TextView
+            android:id="@+id/calendarCenter"
+            style="@style/main_bar_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp" />
+
+        <ImageButton
+            android:id="@+id/calendarLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/left_jiantou" />
+
+        <ImageButton
+            android:id="@+id/calendarRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_jiantou" />
+    </RelativeLayout>
+
+
+    <com.doudou.cn.testcalendarviewdemo.CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="600dp"
+        android:layout_height="600dp"
+        android:layout_below="@+id/rl" />
+	<!--<TextView -->
+	    <!--android:layout_below="@id/calendar"-->
+	    <!--android:layout_width="wrap_content"-->
+	    <!--android:layout_height="wrap_content"-->
+	    <!--android:textColor="@color/white"-->
+	    <!--android:text="初次登记"-->
+	    <!--android:layout_marginTop="10dp"-->
+	    <!--android:textSize="17sp"-->
+	    <!--android:paddingLeft="30dp"-->
+	    <!--android:background="@drawable/first_register1"-->
+	    <!--android:gravity="center"-->
+	    <!--/>-->
+</RelativeLayout>
